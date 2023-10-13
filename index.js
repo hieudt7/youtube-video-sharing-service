@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000","https://hieudt7.github.io/youtube-video-sharing","http://13.210.156.147:3000","http://13.213.71.82:3000","http://34.75.110.218:3000"],
+    origin: ["http://localhost:3000","https://hieudt7.github.io/youtube-video-sharing","http://13.210.156.147:3000","http://13.213.71.82:3000","http://34.75.110.218:3000","http://34.75.110.218:3001"],
     methods: ["GET", "POST"],
   },
 });
