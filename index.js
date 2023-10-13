@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000","https://hieudt7.github.io/youtube-video-sharing"],
+    origin: ["http://localhost:3000","https://hieudt7.github.io/youtube-video-sharing","http://13.210.156.147:3002"],
     methods: ["GET", "POST"],
   },
 });
@@ -29,6 +29,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3002, () => {
+server.listen(443, () => {
   console.log("SERVER IS RUNNING");
 });
